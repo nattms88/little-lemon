@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Footer.css";
 import logo from "../../Assets/logo.svg";
 import instagram from "../../Assets/icons/instagram.svg";
@@ -15,22 +16,22 @@ function Footer() {
           <h3>Navigation</h3>
           <ul>
             <li>
-              <a href="#home">Home</a>
+              <Link to="/">Home</Link>
             </li>
             <li>
-              <a href="#about">About</a>
+              <Link to="/about">About</Link>
             </li>
             <li>
-              <a href="#menu">Menu</a>
+              <Link to="/menu">Menu</Link>
             </li>
             <li>
-              <a href="#reservations">Reservations</a>
+              <Link to="/reservations">Reservations</Link>
             </li>
             <li>
-              <a href="#order-online">Order Online</a>
+              <Link to="/order">Order Online</Link>
             </li>
             <li>
-              <a href="#login">Login</a>
+              <Link to="/login">Login</Link>
             </li>
           </ul>
         </div>
@@ -38,12 +39,12 @@ function Footer() {
           <ul>
             <h3>Opening Hours</h3>
             <li>
-              <span>Monday - Friday</span>
+              <span>Monday - Thursday</span>
               <br />
               12:00 PM - 10:00 PM
             </li>
             <li>
-              <span>Saturday</span>
+              <span>Friday - Saturday</span>
               <br />
               12:00 PM - 11:00 PM
             </li>
@@ -75,10 +76,10 @@ function Footer() {
               chicago@littlelemon.com
             </li>
             <li className="socials">
-              <a className="social" href="#instagram">
+              <a className="social" href="https://www.instagram.com/littlelemon-chicago">
                 <img src={instagram} alt="instagram" />
               </a>
-              <a className="social" href="#facebook">
+              <a className="social" href="https://www.facebook.com/littlelemon-chicago">
                 <img src={facebook} alt="facebook" />
               </a>
             </li>

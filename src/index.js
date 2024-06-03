@@ -8,10 +8,10 @@ import Footer from './Components/Footer/Footer';
 import About from './Pages/About/About';
 import Menu from './Pages/Menu/Menu';
 import Reservations from './Pages/Reservations/Reservations';
-import Form from './Pages/Form/Form';
 import Confirmation from './Pages/Confirmation/Confirmation';
 import OrderOnline from './Pages/OrderOnline/Order';
 import Login from './Pages/Login/Login';
+
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <>
@@ -22,8 +22,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Route path="/about" element={<About />} />
         <Route path="/menu" element={<Menu />} />
         <Route path="/reservations" element={<Reservations />} />
-        <Route path="/reservations/form" element={<Form />} />
-        <Route path="/reservations/confirmation" element={<Confirmation />} />
+        <Route path="/confirmation" element={<Confirmation />} />
         <Route path="/order" element={<OrderOnline />} />
         <Route path="/login" element={<Login />} />
       </Routes>

@@ -1,0 +1,136 @@
+h2 {
+  color: #f4ce14;
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 25px;
+}
+
+button {
+  background-color: #f4ce14;
+  color: black;
+  padding: 14px 18px;
+  border: none;
+  text-decoration: none;
+  border-radius: 12px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Menu items */
+.menu-container {
+  margin: 110px auto;
+  padding: 10px 13%;
+}
+
+.menu-container h2 {
+  color: #000;
+}
+
+.menu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.menu-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-wrap: nowrap;
+  gap: 20px;
+}
+
+.card {
+  flex: 0 0 calc(33.333% - 20px);
+  background: #edefee;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  border-radius: 16px 16px 0 0;
+}
+
+.menu-content {
+  padding: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.menu-content .heading {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-content p {
+  color: #495e57;
+  line-height: 1.5;
+}
+
+.menu-content .foodTitle {
+  color: #000;
+  font-weight: 600;
+}
+
+.menu-content .price {
+  color: #ee9972;
+  font-weight: 600;
+}
+
+.order {
+  font-size: 16px;
+  font-weight: 600;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  padding-block: 20px;
+  height: 20px;
+}
+
+.orderbtn {
+  padding: 5px 12px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.order img {
+  width: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .menu-container {
+    padding: 10px 8%;
+    margin: 20px 0;
+  }
+
+  .menu-header {
+    justify-content: flex-start;
+    padding-bottom: 2rem;
+  }
+
+  .menu-items {
+    overflow-x: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+    gap: 15px;
+  }
+
+  .card {
+    flex: 0 0 70%;
+    min-width: 70%;
+  }
+}
