@@ -1,8 +1,11 @@
+import React from "react";
+import "./Menu.css";
+import menu from "../../Assets/images/dinnermenu.png";
 function Menu() {
     return (
-        <div>
-            <h1>Menu</h1>
-        </div>
+        <section className="menu-section">
+            <img src={menu} alt="menu" />
+        </section>
     );
 }
 

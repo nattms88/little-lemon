@@ -1,0 +1,12 @@
+.menu-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+.menu-section img {
+  width: 100%;
+}
