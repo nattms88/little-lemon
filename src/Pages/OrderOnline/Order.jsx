@@ -1,8 +1,11 @@
+import React from "react";
+import puc from "../../Assets/images/puc.png";
+import "./Order.css";
 function Order() {
     return (
-        <div>
-            <h1>Order Online</h1>
-        </div>
+        <section className="order-section">
+            <img src={puc} alt="page under construction" />
+        </section>
     );
 }
 

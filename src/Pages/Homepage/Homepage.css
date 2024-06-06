@@ -1,8 +1,4 @@
-/* Header styles */
-
-@media screen and (max-width: 768px) {
-  .homepage {
-    display: flex;
-    flex-direction: column;
-  }
+body {
+  padding-top: 60px;
+  width: 100%;
 }

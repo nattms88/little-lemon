@@ -4,6 +4,7 @@ h2 {
 }
 
 h3 {
+  color: #495e57;
   font-size: 25px;
 }
 
@@ -31,12 +32,32 @@ h3 {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  gap: 5px;
+  gap: 1rem;
 }
+
 .about-container img {
   width: 40%;
 }
 
 /* Responsive styles */
 @media screen and (max-width: 768px) {
+  .about {
+    padding: 10px 8%;
+  }
+
+  .about-container {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 0;
+  }
+
+  .about-text {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-container img {
+    width: 100%;
+  }
 }

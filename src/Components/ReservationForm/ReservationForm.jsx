@@ -99,7 +99,7 @@ const ReservationForm = () => {
           ))}
         </select>
         
-        <label htmlFor="numGuests">Number of Guests:</label>
+        <label htmlFor="numGuests">Guests:</label>
         <input
           type="number"
           id="numGuests"
@@ -122,7 +122,7 @@ const ReservationForm = () => {
           <option value="Engagement">Engagement</option>
         </select>
         
-        <label htmlFor="specialRequests">Special Requests:</label>
+        <label htmlFor="specialRequests">Requests:</label>
         <textarea
           id="specialRequests"
           value={specialRequests}

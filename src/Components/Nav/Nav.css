@@ -1,20 +1,13 @@
-/* Global styles */
-body {
+nav {
   width: 100%;
+  top: 0;
+  position: fixed;
   margin: 0 auto;
+  background-color: #f8f8f8;
+  z-index: 1000;
 }
-
-li {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-}
-
-/* Navbar styles */
 .navbar {
-  padding: 10px 13%;
+  padding: 1rem 13%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -23,11 +16,13 @@ a {
 nav ul li {
   display: inline-block;
   padding: 1em;
+  list-style: none;
 }
 
 nav ul li a {
   color: #495e57;
   font-weight: 600;
+  text-decoration: none;
 }
 
 nav ul li a:hover {

@@ -18,7 +18,7 @@ function Highlights() {
             image: bruschetta,
             title: "Bruschetta",
             price: "$7.99",
-            description: "Our Bruschetta is made from grilled bread that has been smeared with garlic and seasoned with salt and olive oil; made perfect for an evening dinner.",
+            description: "Our Bruschetta is made from grilled bread smeared with garlic and seasoned with salt and olive oil; made perfect for an evening dinner.",
         },
         {
             image: dessert,
@@ -38,7 +38,8 @@ function Highlights() {
               </div>
               <p>{menu.description}</p>
               <div className="order">
-                  <button className="orderbtn">Order a delivery</button>
+
+                  <Link to="/order"><button className="orderbtn">Order a delivery</button></Link>
                   <img src={delivery} alt="delivery" />
               </div>
           </div>

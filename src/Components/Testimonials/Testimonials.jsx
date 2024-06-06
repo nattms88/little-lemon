@@ -32,7 +32,7 @@ function Testimonials() {
       const testimonalsItems = testimonials.map((testimonial, index) => (
         <div className="card2" key={index}>
             <div className="card2-content">
-            <img src={testimonial.image} alt={testimonial.name} />
+            <img className="image" src={testimonial.image} alt={testimonial.name} />
             <p className="userName">{testimonial.name}</p>
             <img className="stars" src={stars} alt="stars rating" />
                 <p>{testimonial.description}</p>

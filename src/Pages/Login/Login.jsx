@@ -1,8 +1,11 @@
+import React from "react";
+import puc from "../../Assets/images/puc.png";
+import "./Login.css";
 function Login() {
     return (
-        <div>
-            <h1>Login</h1>
-        </div>
+        <section className="order-section">
+            <img src={puc} alt="page under construction" />
+        </section>
     );
 }
 

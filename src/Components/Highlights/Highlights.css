@@ -119,6 +119,7 @@ button {
   .menu-header {
     justify-content: flex-start;
     padding-bottom: 2rem;
+    gap: 10px;
   }
 
   .menu-items {

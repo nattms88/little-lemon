@@ -8,7 +8,7 @@ import facebook from "../../Assets/icons/facebook.svg";
 function Footer() {
   return (
     <footer>
-      <section>
+      <section className="footer-container">
         <div className="company-info">
           <img src={logo} alt="logo" />
         </div>

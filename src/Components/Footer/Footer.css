@@ -1,30 +1,50 @@
-/* Footer styles */
+footer {
+  width: 100%;
+  margin: 0 auto;
+  background-color: #f8f8f8;
+}
 
-footer section {
-  padding: 10px 13%;
+.footer-container {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: start;
+  gap: 9rem;
+  padding: 2rem 13%;
+  flex-wrap: wrap;
 }
 
 .company-info img {
   margin-top: 50%;
-  cursor: pointer;
-  width: 200px;
+  width: 150px;
+  margin-bottom: 1rem;
 }
 
-.socials {
-  display: flex;
-  gap: 0.5rem;
+.navigation,
+.hours,
+.contact {
+  flex: 1;
+  margin: 1rem;
+  align-items: start;
+  width: fit-content;
 }
 
-.social img {
-  width: 30px;
-  height: 30px;
+footer h3 {
+  font-size: 18px;
+  color: #495e57;
+  margin-bottom: 1rem;
 }
 
-.company-info p {
-  width: 320px;
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+footer ul li {
+  margin-bottom: 1rem;
+  color: #495e57;
+  font-size: 14px;
 }
 
 footer a {
@@ -33,33 +53,50 @@ footer a {
   font-weight: 600;
 }
 
-footer h3 {
-  font-size: 18px;
-  color: #495e57;
-}
-
 footer span {
   font-weight: 600;
   color: #495e57;
 }
 
-footer ul {
-  padding: 0;
+.socials {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
 }
 
-footer ul li {
-  padding: 8px 0;
-  color: #495e57;
+.social img {
+  width: 30px;
+  height: 30px;
 }
 
 /* Responsive styles */
 @media screen and (max-width: 768px) {
-  footer section {
-    padding: 10px 8%;
+  .footer-container {
     flex-direction: column;
+    align-items: center;
+    padding: 10px 8%;
+    gap: 1rem;
   }
 
-  .company-info p {
+  .company-info,
+  .navigation,
+  .hours,
+  .contact {
     width: 100%;
+    text-align: center;
+    margin: 1rem 0;
+  }
+
+  .company-info img {
+    margin-top: 0;
+    width: 100px;
+  }
+
+  .socials {
+    justify-content: center;
+  }
+
+  footer ul li {
+    text-align: center;
   }
 }

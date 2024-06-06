@@ -51,7 +51,7 @@ describe("ReservationForm", () => {
   });
 
   test("Renders number of guests input with correct attributes", () => {
-    const numGuestsInput = screen.getByLabelText(/Number of Guests:/i);
+    const numGuestsInput = screen.getByLabelText(/Guests:/i);
     expect(numGuestsInput).toBeRequired();
     expect(numGuestsInput).toHaveAttribute("type", "number");
     expect(numGuestsInput).toHaveAttribute("min", "1");
@@ -64,7 +64,7 @@ describe("ReservationForm", () => {
   });
 
   test("Renders special requests textarea with correct attributes", () => {
-    const specialRequestsTextarea = screen.getByLabelText(/Special Requests:/i);
+    const specialRequestsTextarea = screen.getByLabelText(/Requests:/i);
     expect(specialRequestsTextarea).not.toBeRequired();
   });
 
@@ -94,7 +94,7 @@ describe("ReservationForm", () => {
     fireEvent.change(screen.getByLabelText(/Time:/i), {
       target: { value: time },
     });
-    fireEvent.change(screen.getByLabelText(/Number of Guests:/i), {
+    fireEvent.change(screen.getByLabelText(/Guests:/i), {
       target: { value: numGuests },
     });
   };
